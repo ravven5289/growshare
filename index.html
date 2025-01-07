@@ -1,16 +1,57 @@
-<html>
-  <head>
-    <title>I am learning html</title>
-  </head>
-  <body bgcolor="#ADD8E6">
-    <p><b>I learning html to create site</b></p>
-    <center>
-    <img src="gunung.jpeg" width="200px" height="200px"><center>
-    <p>Halo kawan kawan selamat datang di website raxoner<p>
-    
-   <p>menu game beginning </p> 
-      <button onclick="document.location='https://raxoner.github.io/snake_fun/'"> Snake game </button
-   
-     
-  </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Keren</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website Keren Kami</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>Beranda</h2>
+            <p>Website ini dirancang untuk memberikan informasi yang menarik dan interaktif.</p>
+            <button id="alertButton">Klik Saya!</button>
+        </section>
+
+        <section id="about">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah tim yang berdedikasi untuk menciptakan pengalaman online yang luar biasa.</p>
+            <img src="https://via.placeholder.com/400" alt="Tentang Kami">
+        </section>
+
+        <section id="services">
+            <h2>Layanan Kami</h2>
+            <div class="grid-container">
+                <div class="grid-item">Layanan 1</div>
+                <div class="grid-item">Layanan 2</div>
+                <div class="grid-item">Layanan 3</div>
+                <div class="grid-item">Layanan 4</div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Kontak</h2>
+            <p>Hubungi kami melalui email: <a href="mailto:info@example.com">info@example.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Website Keren. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

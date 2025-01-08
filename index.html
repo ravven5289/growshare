@@ -3,28 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website keren dengan Gambar</title>
+    <title>Website Keren</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-        canvas {
-            border: 1px solid #000;
-            margin-top: 20px;
-        }
-        button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -76,13 +56,6 @@
             </ul>
         </section>
 
-        <section id="generate-image">
-            <h2>Generate Image</h2>
-            <canvas id="myCanvas" width="400" height="400"></canvas>
-            <button id="generateButton">Generate Image</button>
-            <button id="saveButton">Save Image</button>
-        </section>
-
         <section id="contact">
             <h2>Kontak</h2>
             <p>Hubungi kami melalui email: <a href="mailto:dincoplo@gmail.com">dincoplo@gmail.com</a></p>
@@ -93,9 +66,6 @@
         <p>&copy; 2025 Website Keren. Semua hak dilindungi.</p>
     </footer>
 
-    <script>
-        const canvas = document.getElementById('myCanvas');
-        const ctx = canvas.getContext('2d');
-
-        function generateImage() {
-            //
+    <script src="script.js"></script>
+</body>
+</html>

@@ -20,6 +20,50 @@
         </nav>
     </header>
 
+    <html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waktu Zona Real-Time</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #time {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="time">Waktu: </div>
+    <div id="timezone">Zona Waktu: </div>
+
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const options = {
+                timeZoneName: 'short',
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric',
+                hour12: false
+            };
+            const timeString = now.toLocaleTimeString([], options);
+            const timeZoneString = now.toLocaleTimeString([], { timeZoneName: 'short' });
+
+            document.getElementById('time').textContent = 'Waktu: ' + timeString;
+            document.getElementById('timezone').textContent = 'Zona Waktu: ' + timeZoneString;
+        }
+
+        setInterval(updateTime, 1000); // Memperbarui waktu setiap detik
+        updateTime(); // Panggil fungsi saat pertama kali
+    </script>
+</body>
+    </html>
+    
     <main>
         <section id="home" class="hero">
             <h2>Beranda</h2>
